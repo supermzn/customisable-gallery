@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>Gallery</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!-- Start your code here -->
+  <div class="myGallery">
+    <div class="pictures">
+      <li class="first"><img src="https://unsplash.it/450/300?random&time=1"/></li>
+      <li><img src="https://unsplash.it/450/300?random&time=2"/></li>
+      <li><img src="https://unsplash.it/450/300?random&time=3"/></li>
+      <li><img src="https://unsplash.it/450/300?random&time=4"/></li>
+      <li class="last"><img src="https://unsplash.it/450/300?random&time=5"/></li>
+    </div> 
+  </div>
+  <div class="menu">
+    <input type="radio" name="choice" checked>Simple<br/>
+    <input type="radio" name="choice">Fade out/Fade in<br/>
+    <input type="radio" name="choice">Slide out/Slide in<br/>
+    <input type="radio" name="choice">Slide&cover<br/><br/>
+    Duration<br/><input id="duration" type="text" value="500"/>
+    <br/><br/>
+    <div id="buttons">
+      <button id="prev">PREV</button>
+      <button id="next">NEXT</button>
+    </div>
+  </div>
+<!-- End your code here -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
