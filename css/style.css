@@ -1,22 +1,76 @@
 .myGallery {
-  width: 300px;
-  height: 200px;
-  float: left;
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border-radius: 16px 16px;
+  border-color: #fff;
+  border-style: solid;
+  box-shadow: 2px 2px 10px #B1B1B1;
+  margin-top: 25px;
+  border-width: 7px;
+}
+
+.playground {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  position: absolute;
+  vertical-align: middle;
+  /* width and height equal to image */
+  width: 450;
+  height: 300;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
-.pictures li {
+.pictures {
+  /* centering images vertically and horizontally */
   list-style: none;
 }
 
 .pictures img {
-  position: relative;
   /* scale image proportionally */
   width: auto;
   height: auto;
-  max-width: 300px;
-  max-height: 200px;
-  /* horisontal align */
-  display: block;
-  margin: 0 auto;
+  max-width: 450px;
+  max-height: 300px;
+  border-radius: 16px 16px;
+}
+
+#buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+
+.menu {
+  display: inline;
+  position: absolute;
+  background: #D1FFB3;
+  background: rgba(192,255,151,0.6);
+  padding: 10px 10px 10px 10px;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(100,255,250,0.7) inset;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.settings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }

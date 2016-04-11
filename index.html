@@ -6,29 +6,34 @@
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<!-- Start your code here -->
   <div class="myGallery">
-    <div class="pictures">
-      <li class="first"><img src="https://unsplash.it/450/300?random&time=1"/></li>
-      <li><img src="https://unsplash.it/450/300?random&time=2"/></li>
-      <li><img src="https://unsplash.it/450/300?random&time=3"/></li>
-      <li><img src="https://unsplash.it/450/300?random&time=4"/></li>
-      <li class="last"><img src="https://unsplash.it/450/300?random&time=5"/></li>
-    </div> 
-  </div>
-  <div class="menu">
-    <input type="radio" name="choice" checked>Simple<br/>
-    <input type="radio" name="choice">Fade out/Fade in<br/>
-    <input type="radio" name="choice">Slide out/Slide in<br/>
-    <input type="radio" name="choice">Slide&cover<br/><br/>
-    Duration<br/><input id="duration" type="text" value="500"/>
-    <br/><br/>
-    <div id="buttons">
+   <div id="buttons">
       <button id="prev">PREV</button>
       <button id="next">NEXT</button>
     </div>
+    <div class="playground">
+      <img class="settings" src="https://cdn3.iconfinder.com/data/icons/simple-files-1/128/Settings-32.png"/>
+      <div class="image-wrapper">
+        <div class="pictures">
+          <li class="first"><img src="https://unsplash.it/450/300?random&time=1"/></li>
+          <li><img src="https://unsplash.it/450/300?random&time=2"/></li>
+          <li><img src="https://unsplash.it/450/300?random&time=3"/></li>
+          <li><img src="https://unsplash.it/450/300?random&time=4"/></li>
+          <li class="last"><img src="https://unsplash.it/450/300?random&time=5"/></li>
+        </div>
+      </div>
+      <div class="menu">
+        <input type="radio" name="choice" checked>Simple<br/>
+        <input type="radio" name="choice">Fade out/Fade in<br/>
+        <input type="radio" name="choice">Slide out/Slide in<br/>
+        <input type="radio" name="choice">Slide&cover<br/>
+        Autoplay<input type="checkbox" class="autoplay"/><br/><br/>
+        Duration<br/><input type="text" id="duration"/><br/>
+        Autoplay interval<br/><input type="text" class="autoplay"/>
+        <a href="#" class="close" aria-label="close">&times;</a>
+      </div>
+    </div>
   </div>
-<!-- End your code here -->
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
